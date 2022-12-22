@@ -4,14 +4,14 @@ version = 3
 
 [[package]]
 name = "custom-try"
-version = "0.1.0-rc1"
+version = "0.1.0-rc3"
 dependencies = [
  "custom-try-proc_macros",
 ]
 
 [[package]]
 name = "custom-try-proc_macros"
-version = "0.1.0-rc1"
+version = "0.1.0-rc3"
 dependencies = [
  "proc-macro2",
  "quote",
