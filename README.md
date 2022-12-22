@@ -58,4 +58,10 @@ extern "C" fn ffi_function2() -> FfiResult {
     println!("{}", x);
     FfiResult::OK
 }
+#
+# fn the_answer_to_life_the_universe_and_everything()
+#   -> Option<i32>
+# {
+#     None
+# }
 ```
