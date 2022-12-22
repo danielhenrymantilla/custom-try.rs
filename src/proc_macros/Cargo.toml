@@ -1,0 +1,27 @@
+# Templated by `cargo-generate` using https://github.com/danielhenrymantilla/proc-macro-template
+[lib]
+proc-macro = true
+path = "_mod.rs"
+
+[package]
+name = "custom-try-proc_macros"
+authors = [
+    "Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>"
+]
+version = "0.1.0-rc1"  # Keep in sync
+edition = "2021"
+
+license = "Zlib OR MIT OR Apache-2.0"
+repository = "https://github.com/danielhenrymantilla/custom-try.rs"
+documentation = "https://docs.rs/custom-try"
+
+description = "Internal: proc-macro backend of ::custom_try."
+
+[dependencies]
+proc-macro2.version = "1.0.49"
+quote.version = "1.0.0"
+syn.version = "1.0.84"  # Access to `parse_quote_spanned!()`.
+syn.features = [
+    "full",
+    "visit-mut",
+]
