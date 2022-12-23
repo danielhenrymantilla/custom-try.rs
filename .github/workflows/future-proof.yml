@@ -27,10 +27,8 @@ jobs:
           - nightly
         cargo-locked:
           - '--locked'
-        include:
           # Also future-proof against semver breakage from dependencies.
-          - rust-toolchains: stable
-            cargo-locked: ''
+          - ''
     steps:
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1

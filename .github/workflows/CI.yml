@@ -21,6 +21,10 @@ jobs:
         cargo-locked:
           - '--locked'
           - ''
+        exclude:
+          # MSRV guarantee only stands for `.lock`-tested dependencies.
+          - rust-toolchains: 1.56.0
+            cargo-locked: ''
     steps:
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1

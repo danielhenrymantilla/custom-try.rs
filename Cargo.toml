@@ -7,7 +7,7 @@ name = "custom-try"
 authors = [
     "Daniel Henry-Mantilla <daniel.henry.mantilla@gmail.com>",
 ]
-version = "0.1.0-rc1"  # Keep in sync
+version = "0.1.0-rc3"  # Keep in sync
 edition = "2021"
 
 license = "Zlib OR MIT OR Apache-2.0"
@@ -26,7 +26,7 @@ ui-tests = ["better-docs"]
 
 [dependencies.custom-try-proc_macros]
 path = "src/proc_macros"
-version = "0.1.0-rc1"  # Keep in sync
+version = "0.1.0-rc3"  # Keep in sync
 
 [dev-dependencies]
 

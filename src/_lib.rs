@@ -9,13 +9,6 @@ use {
     },
 };
 
-#[cfg(COMMENTED_OUT)] // <- Remove this when used!
-/// The crate's prelude.
-pub
-mod prelude {
-    // …
-}
-
 /// Replace `expr?` occurrences in the decorated item with `r#try!( expr )`.
 ///
 /// The `r#try!` default path can be overridden by giving it as an argument
@@ -67,12 +60,6 @@ mod prelude {
     # fn the_answer_to_life_the_universe_and_everything() -> Option<i32> { None }
     ``` */
 pub use ::custom_try_proc_macros::custom_try;
-
-// macro internals
-#[doc(hidden)] /** Not part of the public API */ pub
-mod ඞ {
-    pub use ::core; // or `std`
-}
 
 #[doc = include_str!("compile_fail_tests.md")]
 mod _compile_fail_tests {}
